@@ -7,6 +7,15 @@ return "Welcome, " + name +". You are number "+ position +" in line."
 
  }
  
+ var peopleserved = 0;
+ 
+ function takeANumber (katzDeliLine, tickets){
+   peopleserved = peopleserved + tickets;
+   katzDeliLine.push(peopleserved);
+   return "Welcome, " + "You are number " + peopleserved
+ }
+ 
+ 
 function nowServing (deliLine){
 var name;
 
